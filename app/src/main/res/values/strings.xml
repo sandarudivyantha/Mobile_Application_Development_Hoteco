@@ -14,6 +14,39 @@
     <string name="menu_feedback">Feedback</string>
     <string name="menu_logout">Logout</string>
     <string name="user_name">User Name</string>
+    <string name="btn_add_hotel">+ ADD NEW HOTEL</string>
+
+    <string name="add_new_hotel">Add New Hotel</string>
+    <string name="update_hotel">Update Hotel Details</string>
+    <string name="date">Date</string>
+    <string name="hotel_name">Hotel Name</string>
+    <string name="enter_hotel_name">Enter Hotel Name Here</string>
+    <string name="city">City</string>
+    <string name="enter_city">Enter City Here</string>
+    <string name="title">Title</string>
+    <string name="enter_title">Enter the Title Here</string>
+    <string name="beds">Beds</string>
+    <string name="bath">Bath</string>
+    <string name="tp_no">Telephone No</string>
+    <string name="enter_tp_no">Enter Telephone No Here</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="lunch">Lunch</string>
+    <string name="dinner">Dinner</string>
+    <string name="wifi">Wifi</string>
+    <string name="pool">Pool</string>
+    <string name="room">Room</string>
+    <string name="address">Address</string>
+    <string name="enter_address">Enter Address Here</string>
+    <string name="description">Description</string>
+    <string name="enter_des">Enter Description Here ...</string>
+    <string name="price">Price</string>
+    <string name="tot_price">Total Price</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="save">Save</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="add_hotel">+  Add new hotel</string>
+
 
 
 </resources>
