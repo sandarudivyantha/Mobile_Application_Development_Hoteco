@@ -27,7 +27,7 @@
     <string name="enter_title">Enter the Title Here</string>
     <string name="beds">Beds</string>
     <string name="bath">Bath</string>
-    <string name="tp_no">Telephone No</string>
+    <string name="tp_no">Mobile No</string>
     <string name="enter_tp_no">Enter Telephone No Here</string>
     <string name="breakfast">Breakfast</string>
     <string name="lunch">Lunch</string>
