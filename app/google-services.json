@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "635411918696",
+    "project_id": "hoteco-2327a",
+    "storage_bucket": "hoteco-2327a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:635411918696:android:fe2b7841d5e0c871bbf0dd",
+        "android_client_info": {
+          "package_name": "com.example.hoteco"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "635411918696-f1um29fu240n63bjtafd2oqbmebcsv0p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCUueMPF2u69HXD0EqORexb57xst1QyYg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "635411918696-f1um29fu240n63bjtafd2oqbmebcsv0p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
