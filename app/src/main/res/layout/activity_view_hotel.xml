@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:textAlignment="center"
+tools:context=".ViewHotelActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="405dp"
+            android:layout_height="226dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_menu_gallery"
+            tools:srcCompat="@drawable/ic_menu_gallery" />
+
+        <TextView
+            android:id="@+id/text_hotel_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="1dp"
+            android:hint="@string/hotel_name"
+            android:textColor="#000000"
+            android:textColorHint="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+        <TextView
+            android:id="@+id/text_cityOf_hotel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="16dp"
+            android:hint="City of hotel"
+            android:textColorHint="#000000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="3dp"
+            android:hint="title"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_hotel_name" />
+
+        <TextView
+            android:id="@+id/text_bed"
+            android:layout_width="203dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="12dp"
+            android:background="#B3ACAC"
+            android:drawableLeft="@drawable/ic_hotel"
+            android:hapticFeedbackEnabled="false"
+            android:hint="@string/beds"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            app:drawableTint="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_title" />
+
+        <TextView
+            android:id="@+id/text_bath"
+            android:layout_width="205dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="76dp"
+            android:background="#B3ACAC"
+            android:drawableLeft="@drawable/ic_bathtub"
+            android:hapticFeedbackEnabled="false"
+            android:hint="@string/bath"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            app:drawableTint="#000000"
+            app:layout_constraintStart_toStartOf="@+id/text_bed"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+        <TextView
+            android:id="@+id/text_phone"
+            android:layout_width="408dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:drawableLeft="@drawable/ic_call"
+            android:hint="@string/enter_tp_no"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textColorHint="@color/black"
+            android:textSize="19sp"
+            app:drawableTint="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_bed" />
+
+        <TextView
+            android:id="@+id/text_totalPrice"
+            android:layout_width="402dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="64dp"
+            android:background="#2196F3"
+            android:hapticFeedbackEnabled="false"
+            android:hint="@string/tot_price"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            app:drawableTint="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_phone" />
+
+        <TextView
+    android:id="@+id/text_addressTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="12dp"
+    android:layout_marginTop="16dp"
+    android:text="Address:"
+    android:textColor="#000000"
+    android:textSize="20sp"
+    android:textStyle="normal"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/text_totalPrice" />
+
+        <TextView
+            android:id="@+id/text_address"
+            android:layout_width="286dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:hint="@string/address"
+            android:textColorHint="@color/black"
+            android:textSize="19sp"
+            app:layout_constraintStart_toEndOf="@+id/text_addressTitle"
+            app:layout_constraintTop_toBottomOf="@+id/text_totalPrice" />
+
+        <TextView
+    android:id="@+id/text_descriptionTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="12dp"
+    android:layout_marginTop="72dp"
+    android:text="Description: "
+    android:textColor="#000000"
+    android:textSize="20sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/text_totalPrice" />
+
+        <TextView
+            android:id="@+id/text_description"
+            android:layout_width="257dp"
+            android:layout_height="180dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:hint="@string/description"
+            android:textColorHint="#000000"
+            android:textSize="19sp"
+            app:layout_constraintStart_toEndOf="@+id/text_descriptionTitle"
+            app:layout_constraintTop_toBottomOf="@+id/text_address" />
+
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/floatingActionButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="24dp"
+    android:layout_marginBottom="24dp"
+    android:clickable="true"
+    app:backgroundTint="#03A9F4"
+    app:fabSize="normal"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:srcCompat="@android:drawable/ic_menu_add" />
+
+<CheckBox
+    android:id="@+id/checkBox_breakfast"
+    android:layout_width="109dp"
+    android:layout_height="45dp"
+    android:layout_marginStart="4dp"
+    android:layout_marginTop="4dp"
+    android:text="@string/breakfast"
+    android:textSize="17sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/text_phone" />
+
+<CheckBox
+    android:id="@+id/checkBox_pool"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="320dp"
+    android:layout_marginTop="4dp"
+    android:text="@string/pool"
+    android:textSize="17sp"
+    app:layout_constraintStart_toStartOf="@+id/checkBox_breakfast"
+    app:layout_constraintTop_toBottomOf="@+id/text_phone" />
+
+<CheckBox
+    android:id="@+id/checkBox_wifi"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="85dp"
+    android:layout_marginTop="4dp"
+    android:text="@string/wifi"
+    android:textSize="17sp"
+    app:layout_constraintStart_toEndOf="@+id/checkBox_lunch"
+    app:layout_constraintTop_toBottomOf="@+id/text_phone" />
+
+<CheckBox
+    android:id="@+id/checkBox_lunch"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="96dp"
+    android:text="@string/lunch"
+    android:textSize="17sp"
+    app:layout_constraintStart_toStartOf="@+id/checkBox_breakfast"
+    app:layout_constraintTop_toTopOf="@+id/checkBox_Dinner" />
+
+<CheckBox
+    android:id="@+id/checkBox_Dinner"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="70dp"
+    android:layout_marginTop="4dp"
+    android:text="@string/dinner"
+    android:textSize="17sp"
+    app:layout_constraintStart_toEndOf="@+id/checkBox_breakfast"
+    app:layout_constraintTop_toBottomOf="@+id/text_phone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>

@@ -67,3 +67,5 @@ public class AddNewHotelActivity extends AppCompatActivity {
 
     }
 }
+
+

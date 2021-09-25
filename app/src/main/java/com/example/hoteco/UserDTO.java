@@ -1,10 +1,10 @@
-package com.example.hoteco.dto;
+package com.example.hoteco;
 
 import java.lang.reflect.Field;
 import java.util.HashMap;
 import java.util.Map;
 
-public class UserDTO extends SuperDTO {
+public class UserDTO {
 
     public String UserName;
     public String Email;
@@ -16,14 +16,14 @@ public class UserDTO extends SuperDTO {
     public UserDTO() {
     }
 
-    public UserDTO(String UserName, String userAddress, String mobileNo)
-    {
-        this.UserName = UserName;
-        UserAddress = userAddress;
-        MobileNo = mobileNo;
-
+    public UserDTO(String userName, String email, String nic, String address, String profilePhoto, String mobile) {
+        this.UserName = userName;
+        Email = email;
+        Nic = nic;
+        UserAddress = address;
+        ProfilePhoto = profilePhoto;
+        MobileNo = mobile;
     }
-
 
 
     //android to firebase

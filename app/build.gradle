@@ -71,4 +71,6 @@ dependencies {
     implementation 'com.google.firebase:firebase-firestore' // fire store
     implementation 'com.google.firebase:firebase-storage' // storage
 
+    // GSON
+    implementation 'com.google.code.gson:gson:2.8.6'
 }

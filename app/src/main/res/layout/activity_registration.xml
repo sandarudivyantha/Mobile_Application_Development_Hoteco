@@ -79,7 +79,7 @@ tools:context=".RegistrationActivity">
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/txtFirstNameRegistration"
+        android:id="@+id/txtUserNameRegistration"
         android:layout_width="350dp"
         android:layout_height="47dp"
         android:background="@drawable/box_bg"
@@ -110,7 +110,7 @@ tools:context=".RegistrationActivity">
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.461"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtFirstNameRegistration" />
+        app:layout_constraintTop_toBottomOf="@+id/txtUserNameRegistration" />
 
     <EditText
         android:id="@+id/txtEmailRegistration"

@@ -19,3 +19,5 @@ public class AdvertisementsActivity extends AppCompatActivity {
         actionBar.setDisplayHomeAsUpEnabled(true);
     }
 }
+
+
