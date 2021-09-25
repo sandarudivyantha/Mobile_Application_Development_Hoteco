@@ -81,7 +81,7 @@
             app:layout_constraintTop_toBottomOf="@+id/txtUserNameAddHotel" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
+            android:id="@+id/edit_txt_hotelName"
             android:layout_width="254dp"
             android:layout_height="40dp"
             android:layout_marginStart="2dp"
@@ -129,7 +129,7 @@
             android:textColorHint="@color/black"
             android:textSize="16sp"
             app:layout_constraintStart_toEndOf="@+id/txt_city"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+            app:layout_constraintTop_toBottomOf="@+id/edit_txt_hotelName" />
 
         <TextView
             android:id="@+id/editTextTextPersonName5"
@@ -149,7 +149,7 @@
             app:layout_constraintTop_toBottomOf="@+id/txt_city" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName6"
+            android:id="@+id/edit_txt_title"
             android:layout_width="254dp"
             android:layout_height="40dp"
             android:layout_marginStart="2dp"
@@ -183,7 +183,7 @@
             app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName8"
+            android:id="@+id/editTxt_bed_addHotel"
             android:layout_width="83dp"
             android:layout_height="40dp"
             android:layout_marginStart="2dp"
@@ -197,7 +197,7 @@
             android:textColorHint="@color/black"
             android:textSize="16sp"
             app:layout_constraintStart_toEndOf="@+id/txtBed"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6" />
+            app:layout_constraintTop_toBottomOf="@+id/edit_txt_title" />
 
         <TextView
             android:id="@+id/editTextTextPersonName9"
@@ -214,11 +214,11 @@
             android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName8"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6" />
+            app:layout_constraintStart_toEndOf="@+id/editTxt_bed_addHotel"
+            app:layout_constraintTop_toBottomOf="@+id/edit_txt_title" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName10"
+            android:id="@+id/editTxt_bath_addHotel"
             android:layout_width="83dp"
             android:layout_height="40dp"
             android:layout_marginStart="2dp"
@@ -232,7 +232,7 @@
             android:textColorHint="@color/black"
             android:textSize="16sp"
             app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName9"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6" />
+            app:layout_constraintTop_toBottomOf="@+id/edit_txt_title" />
 
         <TextView
             android:id="@+id/editTextTextPersonName11"
@@ -252,7 +252,7 @@
             app:layout_constraintTop_toBottomOf="@+id/txtBed" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName12"
+            android:id="@+id/editTxt_phone_addHotel"
             android:layout_width="253dp"
             android:layout_height="40dp"
             android:layout_marginStart="2dp"
@@ -286,7 +286,7 @@
             app:layout_constraintTop_toBottomOf="@+id/editAddWifi" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName14"
+            android:id="@+id/editTxt_totalPrice_addHotel"
             android:layout_width="254dp"
             android:layout_height="40dp"
             android:layout_marginStart="2dp"
@@ -304,7 +304,7 @@
             app:layout_constraintTop_toBottomOf="@+id/editAddPool" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName15"
+            android:id="@+id/editTxt_address_addHotel"
             android:layout_width="254dp"
             android:layout_height="58dp"
             android:layout_marginStart="2dp"
@@ -319,7 +319,7 @@
             android:textColorHint="@color/black"
             android:textSize="16sp"
             app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName16"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName14" />
+            app:layout_constraintTop_toBottomOf="@+id/editTxt_totalPrice_addHotel" />
 
         <TextView
             android:id="@+id/editTextTextPersonName16"
@@ -353,7 +353,7 @@
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName18" />
+            app:layout_constraintTop_toBottomOf="@+id/editTxt_description_addHotel" />
 
         <TextView
             android:id="@+id/editTextTextPersonName17"
@@ -373,7 +373,7 @@
             app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName16" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName18"
+            android:id="@+id/editTxt_description_addHotel"
             android:layout_width="355dp"
             android:layout_height="80dp"
             android:layout_marginStart="16dp"
@@ -399,7 +399,7 @@
             android:layout_marginEnd="24dp"
             android:text="@string/save"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName18" />
+            app:layout_constraintTop_toBottomOf="@+id/editTxt_description_addHotel" />
 
         <TextView
             android:id="@+id/editAddBreakfast"
@@ -432,7 +432,7 @@
             android:textSize="14sp"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/editBreakfastPrice"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName12" />
+            app:layout_constraintTop_toBottomOf="@+id/editTxt_phone_addHotel" />
 
         <TextView
             android:id="@+id/editAddDinner"
@@ -448,7 +448,7 @@
             android:textSize="14sp"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/editAddLunchPrice"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName12" />
+            app:layout_constraintTop_toBottomOf="@+id/editTxt_phone_addHotel" />
 
         <TextView
             android:id="@+id/editAddPool"
@@ -505,7 +505,7 @@
             android:inputType="textPersonName"
             android:textColorHint="@color/black"
             app:layout_constraintStart_toEndOf="@+id/editAddBreakfast"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName12" />
+            app:layout_constraintTop_toBottomOf="@+id/editTxt_phone_addHotel" />
 
         <EditText
             android:id="@+id/editDinnerPrice"
@@ -517,7 +517,7 @@
             android:inputType="textPersonName"
             android:textColorHint="@color/black"
             app:layout_constraintStart_toEndOf="@+id/editAddDinner"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName12" />
+            app:layout_constraintTop_toBottomOf="@+id/editTxt_phone_addHotel" />
 
         <EditText
             android:id="@+id/editAddLunchPrice"
@@ -529,7 +529,7 @@
             android:inputType="textPersonName"
             android:textColorHint="@color/black"
             app:layout_constraintStart_toEndOf="@+id/editAddLunch"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName12" />
+            app:layout_constraintTop_toBottomOf="@+id/editTxt_phone_addHotel" />
 
         <EditText
             android:id="@+id/editPoolPrice"
@@ -579,7 +579,7 @@
             android:layout_marginStart="3dp"
             android:layout_marginTop="6dp"
             app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName18"
+            app:layout_constraintTop_toBottomOf="@+id/editTxt_description_addHotel"
             app:srcCompat="@android:drawable/ic_menu_gallery" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
