@@ -16,18 +16,19 @@ import java.util.Calendar;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class AddNewHotelActivity extends AppCompatActivity {
+public class UpdateHotelDetailsActivity extends AppCompatActivity {
 
-    @BindView(R.id.editDate)
+    @BindView(R.id.editUpdateDate)
     EditText txt_date;
 
     EditText date;
     DatePickerDialog datePickerDialog;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_new_hotel);
+        setContentView(R.layout.activity_update_hotel_details);
 
         ButterKnife.bind(this);
 
@@ -36,7 +37,7 @@ public class AddNewHotelActivity extends AppCompatActivity {
         actionBar.setDisplayHomeAsUpEnabled(true);
 
         // initiate the date picker and a button
-        date = (EditText) findViewById(R.id.editDate);
+        date = (EditText) findViewById(R.id.editUpdateDate);
 
         // perform click event on edit text
         date.setOnClickListener(new View.OnClickListener() {
@@ -48,7 +49,7 @@ public class AddNewHotelActivity extends AppCompatActivity {
                 int mMonth = c.get(Calendar.MONTH); // current month
                 int mDay = c.get(Calendar.DAY_OF_MONTH); // current day
                 // date picker dialog
-                datePickerDialog = new DatePickerDialog(AddNewHotelActivity.this,
+                datePickerDialog = new DatePickerDialog(UpdateHotelDetailsActivity.this,
                         new DatePickerDialog.OnDateSetListener() {
 
                             @Override
@@ -62,8 +63,5 @@ public class AddNewHotelActivity extends AppCompatActivity {
                 datePickerDialog.show();
             }
         });
-
-
-
     }
 }
