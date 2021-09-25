@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/layout_register"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/white"
+android:scrollbarSize="10dp"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent"
+tools:context=".RegistrationActivity">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/signup_registration"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+
+    <View
+        android:id="@+id/topViewRegistration"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:background="@drawable/upper_loggin_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtSignupRegistration"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="20dp"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/topViewRegistration"
+        app:layout_constraintEnd_toEndOf="@+id/topViewRegistration"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/draViewRegistration"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_wave_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topViewRegistration" />
+
+
+    <TextView
+        android:id="@+id/txtFirstNameReg"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="24dp"
+        android:paddingLeft="8dp"
+        android:text="Enter your Name"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topViewRegistration"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txtFirstNameRegistration"
+        android:layout_width="350dp"
+        android:layout_height="47dp"
+        android:background="@drawable/box_bg"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="@string/user_name"
+        android:inputType="text"
+        android:paddingLeft="16dp"
+        android:textColorHint="@color/common_google_signin_btn_text_light_default"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.411"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFirstNameReg" />
+
+
+    <TextView
+        android:id="@+id/txtEmailReg"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:paddingLeft="8dp"
+        android:text="Enter your Email Address"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFirstNameRegistration" />
+
+    <EditText
+        android:id="@+id/txtEmailRegistration"
+        android:layout_width="350dp"
+        android:layout_height="47dp"
+        android:background="@drawable/box_bg"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="Email"
+        android:inputType="text"
+        android:paddingLeft="16dp"
+        android:textColorHint="@color/common_google_signin_btn_text_light_default"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmailReg" />
+
+
+    <TextView
+        android:id="@+id/txtPasswordReg"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:paddingLeft="8dp"
+        android:text="Enter your Password"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmailRegistration" />
+
+    <EditText
+        android:id="@+id/txtPasswordRegistration"
+        android:layout_width="350dp"
+        android:layout_height="47dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/box_bg"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="16dp"
+        android:textColorHint="@color/common_google_signin_btn_text_light_default"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.262"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPasswordReg" />
+
+    <TextView
+        android:id="@+id/txtNicReg"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:paddingLeft="8dp"
+        android:text="Enter your NIC Number"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.365"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPasswordRegistration" />
+
+
+    <EditText
+        android:id="@+id/txtNicRegistration"
+        android:layout_width="350dp"
+        android:layout_height="47dp"
+        android:background="@drawable/box_bg"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="NIC"
+        android:inputType="text"
+        android:paddingLeft="16dp"
+        android:textColorHint="@color/common_google_signin_btn_text_light_default"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.411"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNicReg" />
+
+
+    <TextView
+        android:id="@+id/txtAddressReg"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:paddingLeft="8dp"
+        android:text="Enter your Address"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.365"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNicRegistration" />
+
+
+    <EditText
+        android:id="@+id/txtAddressRegistration"
+        android:layout_width="350dp"
+        android:layout_height="47dp"
+        android:background="@drawable/box_bg"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="@string/address"
+        android:inputType="text"
+        android:paddingLeft="16dp"
+        android:textColorHint="@color/common_google_signin_btn_text_light_default"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAddressReg" />
+
+    <TextView
+        android:id="@+id/txtMobileNoReg"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:paddingLeft="8dp"
+        android:text="Enter your Mobile Number"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.365"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAddressRegistration" />
+
+
+    <EditText
+        android:id="@+id/txtMobileNoRegistration"
+        android:layout_width="350dp"
+        android:layout_height="47dp"
+        android:background="@drawable/box_bg"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="@string/tp_no"
+        android:inputType="number"
+        android:paddingLeft="16dp"
+        android:textColorHint="@color/common_google_signin_btn_text_light_default"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMobileNoReg" />
+
+
+    <Button
+        android:id="@+id/btnSubmitRegistration"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/upper_loggin_bar"
+        android:text="Submit"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:backgroundTint="#063A5C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMobileNoRegistration" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="504dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSubmitRegistration" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
