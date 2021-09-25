@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.UpdateHotelDetailsActivity"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_UpdateNewHotel"
+            android:layout_width="230dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="88dp"
+            android:text="@string/update_hotel"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editUpdateDate"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/box_bg"
+            android:drawableRight="@drawable/ic_date_calender"
+            android:ems="10"
+            android:hint="@string/date"
+            android:inputType="date"
+            android:paddingLeft="50px"
+            android:paddingRight="50px"
+            android:textColorHint="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/txtUserNameUpdateHotel"
+            app:layout_constraintTop_toBottomOf="@+id/txt_UpdateNewHotel"
+            app:layout_goneMarginTop="5dp" />
+
+        <EditText
+            android:id="@+id/txtUserNameUpdateHotel"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/box_bg"
+            android:drawableLeft="@drawable/ic_person"
+            android:fontFamily="sans-serif"
+            android:hint="@string/user_name"
+            android:inputType="textPersonName"
+            android:paddingLeft="16dp"
+            android:textColorHint="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_UpdateNewHotel" />
+
+        <TextView
+            android:id="@+id/txtUpdateHotelName"
+            android:layout_width="103dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:background="#B3ACAC"
+            android:hapticFeedbackEnabled="false"
+            android:padding="5dp"
+            android:text="@string/hotel_name"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtUserNameUpdateHotel" />
+
+        <EditText
+            android:id="@+id/editUpdateHotelName"
+            android:layout_width="254dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/box_bg"
+            android:ems="10"
+            android:hint="@string/enter_hotel_name"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:textColor="#2E2B2B"
+            android:textColorHint="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/txtUpdateHotelName"
+            app:layout_constraintTop_toBottomOf="@+id/editUpdateDate" />
+
+        <TextView
+            android:id="@+id/txt_update_city"
+            android:layout_width="103dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:background="#B3ACAC"
+            android:hapticFeedbackEnabled="false"
+            android:padding="5dp"
+            android:text="@string/city"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtUpdateHotelName" />
+
+        <EditText
+            android:id="@+id/edit_txt_enterCity"
+            android:layout_width="254dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/box_bg"
+            android:ems="10"
+            android:hint="@string/enter_city"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:textColor="#2E2B2B"
+            android:textColorHint="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/txt_update_city"
+            app:layout_constraintTop_toBottomOf="@+id/editUpdateHotelName" />
+
+        <TextView
+            android:id="@+id/txtUpdateTitle"
+            android:layout_width="103dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:background="#B3ACAC"
+            android:hapticFeedbackEnabled="false"
+            android:padding="5dp"
+            android:text="@string/title"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_update_city" />
+
+        <EditText
+            android:id="@+id/editUpdateTitle"
+            android:layout_width="254dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/box_bg"
+            android:ems="10"
+            android:hint="@string/enter_title"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:textColor="#2E2B2B"
+            android:textColorHint="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/txtUpdateTitle"
+            app:layout_constraintTop_toBottomOf="@+id/edit_txt_enterCity" />
+
+        <TextView
+            android:id="@+id/txt_update_Bed"
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:background="#B3ACAC"
+            android:drawableBottom="@drawable/ic_hotel"
+            android:hapticFeedbackEnabled="false"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtUpdateTitle" />
+
+        <EditText
+            android:id="@+id/edit_update_bedIcon"
+            android:layout_width="83dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/box_bg"
+            android:ems="10"
+            android:hint="@string/beds"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:textColor="#2E2B2B"
+            android:textColorHint="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/txt_update_Bed"
+            app:layout_constraintTop_toBottomOf="@+id/editUpdateTitle" />
+
+        <TextView
+            android:id="@+id/txt_update_bath"
+            android:layout_width="76dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:background="#B3ACAC"
+            android:drawableBottom="@drawable/ic_bathtub"
+            android:drawablePadding="50dp"
+            android:hapticFeedbackEnabled="false"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/edit_update_bedIcon"
+            app:layout_constraintTop_toBottomOf="@+id/editUpdateTitle" />
+
+        <EditText
+            android:id="@+id/edit_update_bathIcon"
+            android:layout_width="83dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/box_bg"
+            android:ems="10"
+            android:hint="@string/bath"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:textColor="#2E2B2B"
+            android:textColorHint="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/txt_update_bath"
+            app:layout_constraintTop_toBottomOf="@+id/editUpdateTitle" />
+
+        <TextView
+            android:id="@+id/editTextTextPersonName11"
+            android:layout_width="103dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:background="#B3ACAC"
+            android:drawableBottom="@drawable/ic_call"
+            android:hapticFeedbackEnabled="false"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_update_Bed" />
+
+        <EditText
+            android:id="@+id/edit_update_TeleNo"
+            android:layout_width="253dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/box_bg"
+            android:ems="10"
+            android:hint="@string/enter_tp_no"
+            android:inputType="number|phone"
+            android:paddingLeft="10dp"
+            android:textColor="#2E2B2B"
+            android:textColorHint="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName11"
+            app:layout_constraintTop_toBottomOf="@+id/txt_update_bath" />
+
+        <TextView
+            android:id="@+id/editTextTextPersonName13"
+            android:layout_width="103dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:background="#B3ACAC"
+            android:drawableBottom="@drawable/ic_monetization"
+            android:hapticFeedbackEnabled="false"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_update_Wifi" />
+
+        <EditText
+            android:id="@+id/edit_update_price"
+            android:layout_width="254dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/box_bg"
+            android:ems="10"
+            android:hint="@string/tot_price"
+            android:inputType="number|textPersonName"
+            android:paddingStart="10dp"
+            android:paddingLeft="100dp"
+            android:textColor="#2E2B2B"
+            android:textColorHint="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName13"
+            app:layout_constraintTop_toBottomOf="@+id/txt_update_Pool" />
+
+        <EditText
+            android:id="@+id/edit_update_address"
+            android:layout_width="254dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/box_bg"
+            android:ems="10"
+            android:hint="@string/enter_address"
+            android:inputType="textMultiLine|textPostalAddress"
+            android:paddingLeft="10dp"
+            android:textAlignment="viewStart"
+            android:textColor="#2E2B2B"
+            android:textColorHint="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/txt_update_address"
+            app:layout_constraintTop_toBottomOf="@+id/edit_update_price" />
+
+        <TextView
+            android:id="@+id/txt_update_address"
+            android:layout_width="103dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:background="#B3ACAC"
+            android:hapticFeedbackEnabled="false"
+            android:padding="5dp"
+            android:text="@string/address"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName13" />
+
+        <TextView
+            android:id="@+id/txt_update_img"
+            android:layout_width="103dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:background="#B3ACAC"
+            android:hapticFeedbackEnabled="false"
+            android:padding="5dp"
+            android:text="@string/upload_image"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_update_description" />
+
+        <TextView
+            android:id="@+id/txt_update_description"
+            android:layout_width="355dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:background="#B3ACAC"
+            android:hapticFeedbackEnabled="false"
+            android:padding="5dp"
+            android:text="@string/description"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_update_address" />
+
+        <EditText
+            android:id="@+id/edit_update_description"
+            android:layout_width="355dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/box_bg"
+            android:ems="10"
+            android:hint="@string/enter_des"
+            android:inputType="textMultiLine"
+            android:paddingStart="10dp"
+            android:paddingLeft="100dp"
+            android:textAlignment="viewStart"
+            android:textColor="#2E2B2B"
+            android:textColorHint="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_update_description" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="44dp"
+            android:text="@string/delete"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_update_description" />
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="44dp"
+            android:text="@string/update"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_update_description" />
+
+        <TextView
+            android:id="@+id/txt_update_Breakfast"
+            android:layout_width="75dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:background="#B3ACAC"
+            android:hapticFeedbackEnabled="false"
+            android:padding="5dp"
+            android:text="@string/breakfast"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName11" />
+
+        <TextView
+            android:id="@+id/txt_update_Lunch"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:background="#B3ACAC"
+            android:hapticFeedbackEnabled="false"
+            android:padding="5dp"
+            android:text="@string/lunch"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/edit_update_BreakfastPrice"
+            app:layout_constraintTop_toBottomOf="@+id/edit_update_TeleNo" />
+
+        <TextView
+            android:id="@+id/txt_update_Dinner"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:background="#B3ACAC"
+            android:hapticFeedbackEnabled="false"
+            android:padding="5dp"
+            android:text="@string/dinner"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/edit_update_LunchPrice"
+            app:layout_constraintTop_toBottomOf="@+id/edit_update_TeleNo" />
+
+        <TextView
+            android:id="@+id/txt_update_Pool"
+            android:layout_width="63dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:background="#B3ACAC"
+            android:hapticFeedbackEnabled="false"
+            android:padding="5dp"
+            android:text="@string/pool"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/edit_Update_WifiPrice"
+            app:layout_constraintTop_toBottomOf="@+id/txt_update_Dinner" />
+
+        <TextView
+            android:id="@+id/txt_update_Wifi"
+            android:layout_width="68dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:background="#B3ACAC"
+            android:hapticFeedbackEnabled="false"
+            android:padding="5dp"
+            android:text="@string/wifi"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_update_Breakfast" />
+
+        <EditText
+            android:id="@+id/edit_Update_WifiPrice"
+            android:layout_width="58dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="@string/price"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/txt_update_Wifi"
+            app:layout_constraintTop_toBottomOf="@+id/edit_update_BreakfastPrice" />
+
+        <EditText
+            android:id="@+id/edit_update_BreakfastPrice"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="@string/price"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/txt_update_Breakfast"
+            app:layout_constraintTop_toBottomOf="@+id/edit_update_TeleNo" />
+
+        <EditText
+            android:id="@+id/edit_update_DinnerPrice"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="@string/price"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/txt_update_Dinner"
+            app:layout_constraintTop_toBottomOf="@+id/edit_update_TeleNo" />
+
+        <EditText
+            android:id="@+id/edit_update_LunchPrice"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="@string/price"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/txt_update_Lunch"
+            app:layout_constraintTop_toBottomOf="@+id/edit_update_TeleNo" />
+
+        <EditText
+            android:id="@+id/edit_update_PoolPrice"
+            android:layout_width="58dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="@string/price"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/txt_update_Pool"
+            app:layout_constraintTop_toBottomOf="@+id/edit_update_DinnerPrice" />
+
+        <TextView
+            android:id="@+id/txt_update_Room"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:background="#B3ACAC"
+            android:hapticFeedbackEnabled="false"
+            android:padding="5dp"
+            android:text="@string/room"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/edit_update_PoolPrice"
+            app:layout_constraintTop_toBottomOf="@+id/txt_update_Dinner" />
+
+        <EditText
+            android:id="@+id/edit_update_RoomPrice"
+            android:layout_width="58dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="@string/price"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/txt_update_Room"
+            app:layout_constraintTop_toBottomOf="@+id/edit_update_DinnerPrice" />
+
+        <ImageButton
+            android:id="@+id/img_btn_update"
+            android:layout_width="125dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="6dp"
+            app:layout_constraintStart_toEndOf="@+id/txt_update_img"
+            app:layout_constraintTop_toBottomOf="@+id/edit_update_description"
+            app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
