@@ -1,8 +1,9 @@
-package com.example.hoteco;
+package com.example.hoteco.util;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 
+import com.example.hoteco.dto.UserDTO;
 import com.google.gson.Gson;
 
 import static android.content.Context.MODE_PRIVATE;

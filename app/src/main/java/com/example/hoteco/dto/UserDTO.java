@@ -1,4 +1,4 @@
-package com.example.hoteco;
+package com.example.hoteco.dto;
 
 import java.lang.reflect.Field;
 import java.util.HashMap;

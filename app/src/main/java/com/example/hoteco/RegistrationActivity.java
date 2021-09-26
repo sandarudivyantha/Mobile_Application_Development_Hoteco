@@ -1,19 +1,18 @@
 package com.example.hoteco;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.os.Bundle;
+import android.widget.EditText;
+import android.widget.ScrollView;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.EditText;
-import android.widget.ScrollView;
-import android.widget.Spinner;
-import android.widget.TextView;
-import android.widget.Toast;
-
+import com.example.hoteco.dto.UserDTO;
+import com.example.hoteco.util.Utils;
+import com.example.hoteco.util.Validator;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -94,7 +93,6 @@ public class RegistrationActivity extends AppCompatActivity {
             isValid = false;
             txt_password.setError("Password must contains at least 8 digits!");
         }
-
         if (nic.isEmpty()) {
             isValid = false;
             txt_nic.setError("NIC Required!");
@@ -102,7 +100,6 @@ public class RegistrationActivity extends AppCompatActivity {
             isValid = false;
             txt_nic.setError("Invalid NIC Format!");
         }
-
         if (mobile.isEmpty()) {
             isValid = false;
             txt_mobileNo.setError("Mobile Number Required!");
@@ -110,14 +107,13 @@ public class RegistrationActivity extends AppCompatActivity {
             isValid = false;
             txt_mobileNo.setError("Please, Enter 10 digit Mobile Number");
         }
-
         if (address.isEmpty()) {
             isValid = false;
             txt_email.setError("Address Required!");
         }
 
         if (isValid) {
-            UserDTO userDTO = new UserDTO(userName, email, nic, address, "", mobile);
+            UserDTO userDTO = new UserDTO(userName,email, nic, address, "", mobile);
 
 
             DocumentReference docIdRef = db.collection("users").document(email);

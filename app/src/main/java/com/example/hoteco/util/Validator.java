@@ -1,4 +1,4 @@
-package com.example.hoteco;
+package com.example.hoteco.util;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

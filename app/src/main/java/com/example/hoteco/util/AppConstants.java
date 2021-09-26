@@ -1,4 +1,4 @@
-package com.example.hoteco;
+package com.example.hoteco.util;
 
 import com.example.hoteco.R;
 

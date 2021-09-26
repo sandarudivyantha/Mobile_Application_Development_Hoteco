@@ -392,21 +392,11 @@
             app:layout_constraintTop_toBottomOf="@+id/txt_update_description" />
 
         <Button
-            android:id="@+id/btn_delete"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="56dp"
-            android:layout_marginEnd="44dp"
-            android:text="@string/delete"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/edit_update_description" />
-
-        <Button
             android:id="@+id/btn_update"
             android:layout_width="100dp"
             android:layout_height="50dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="44dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="40dp"
             android:text="@string/save"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/edit_update_description" />
@@ -584,7 +574,7 @@
 
         <ImageButton
             android:id="@+id/img_btn_update"
-            android:layout_width="125dp"
+            android:layout_width="140dp"
             android:layout_height="100dp"
             android:layout_marginStart="3dp"
             android:layout_marginTop="6dp"

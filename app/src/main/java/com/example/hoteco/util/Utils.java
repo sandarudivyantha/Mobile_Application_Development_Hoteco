@@ -1,4 +1,4 @@
-package com.example.hoteco;
+package com.example.hoteco.util;
 
 import android.content.Context;
 import android.content.Intent;
@@ -8,6 +8,8 @@ import android.widget.ScrollView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import com.example.hoteco.LoginActivity;
+import com.example.hoteco.dto.SuperDTO;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.FirebaseAuth;
 
